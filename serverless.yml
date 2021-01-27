@@ -1,8 +1,9 @@
-service: ts-graphql-hw
+service: ts-graphql-hello-world
 
 plugins:
   - serverless-webpack # Enable typescript transpilation through webpack and deployment with serverless
   - serverless-plugin-git-variables
+  - serverless-dotenv-plugin
   - serverless-offline
 
 custom:  
@@ -11,7 +12,9 @@ custom:
   resourcePrefix: ${self:service}-${self:custom.stage}
   env: ${opt:env, self:custom.stage}
   account: ${opt:account, self:provider.account}
-  functionName: ${self:custom.env}-ts-graphql-hw # This is the function name appears in the AWS lambda console.
+  functionName: ${self:custom.env}-ts-graphql-hello-world # This is the function name appears in the AWS lambda console.
+  webpack:
+    includeModules: true
 
 provider:
   name: aws

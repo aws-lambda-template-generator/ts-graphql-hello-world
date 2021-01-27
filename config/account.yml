@@ -1,0 +1,3 @@
+REGION: ap-southeast-2
+ACCOUNT_ID: 811304796526
+DEPLOYMENT_BUCKET: test.lambdafunction.bucket
