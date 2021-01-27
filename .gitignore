@@ -7,3 +7,4 @@
 .env*
 npm-debug.log
 Thumbs.db
+/config
