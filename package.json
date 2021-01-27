@@ -32,31 +32,25 @@
     ],
     "all": true
   },
+  "resolutions": {
+    "graphql": "^15.0.0"
+  },
   "dependencies": {
+    "apollo-server-lambda": "^2.19.2",
     "axios": "^0.19.2",
-    "test": "^0.6.0"
+    "graphql": "^15.0.0",
+    "bufferutil": "^4.0.3",
+    "test": "^0.6.0",
+    "utf-8-validate": "^5.0.4"
   },
   "devDependencies": {
-    "@types/chai": "^4.2.11",
-    "@types/mocha": "^7.0.2",
-    "@types/nock": "^11.1.0",
-    "@types/node": "^13.13.0",
-    "@types/sinon": "^9.0.0",
-    "@typescript-eslint/eslint-plugin": "^2.28.0",
-    "chai": "^4.2.0",
-    "chai-as-promised": "^7.1.1",
-    "mocha": "^7.1.1",
-    "mocha-typescript": "^1.1.17",
-    "nock": "^12.0.3",
-    "nyc": "^15.0.1",
     "serverless": "^1.67.3",
     "serverless-domain-manager": "^3.3.1",
+    "serverless-offline": "^6.8.0",
     "serverless-plugin-git-variables": "^4.0.0",
     "serverless-webpack": "^5.3.1",
-    "sinon": "^9.0.2",
     "source-map-support": "^0.5.17",
     "ts-loader": "^7.0.1",
-    "tslint": "^6.1.1",
     "typescript": "^3.8.3",
     "webpack": "^4.42.1"
   }
