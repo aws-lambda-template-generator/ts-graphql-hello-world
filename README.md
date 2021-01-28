@@ -10,6 +10,8 @@ yarn add apollo-server-lambda graphql
 yarn add bufferutil utf-8-validate
 ```
 
+*Tools*
+
 ## Testing lambda locally
 
 Use Serverless Offline.

@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
+    "lint": "./node_modules/.bin/eslint ./",
+    "lint-fixup": "./node_modules/.bin/eslint ./ --ext .js,.jsx --fix",
+    "generate": "graphql-codegen --config codegen.yml",
     "deploy": "sls deploy --stage test",
     "dev": "sls offline start -r ap-southeast-1 --stage test"
   },
@@ -14,6 +17,9 @@
     "graphql": "^15.3.0"
   },
   "devDependencies": {
+    "@graphql-codegen/cli": "1.19.0",
+    "@graphql-codegen/typescript": "1.17.11",
+    "eslint": "^7.12.1",
     "serverless-dotenv-plugin": "^3.0.0",
     "serverless-offline": "^6.5.0",
     "serverless-plugin-git-variables": "^5.1.0",

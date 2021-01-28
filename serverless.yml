@@ -13,6 +13,7 @@ custom:
   env: ${opt:env, self:custom.stage}
   account: ${opt:account, self:provider.account}
   functionName: ${self:custom.env}-ts-graphql-hello-world # This is the function name appears in the AWS lambda console.
+  description: TypeScript GraphQL Lambda Hello World Example
   webpack:
     includeModules: true
 
