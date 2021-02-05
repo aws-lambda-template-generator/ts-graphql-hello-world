@@ -14,7 +14,8 @@
   "license": "MIT",
   "dependencies": {
     "apollo-server-lambda": "^2.16.1",
-    "graphql": "^15.3.0"
+    "graphql": "^15.3.0",
+    "serverless": "^2.22.0"
   },
   "devDependencies": {
     "@graphql-codegen/cli": "1.19.0",
