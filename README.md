@@ -36,5 +36,6 @@ Go to `http://localhost:3000/test/graphql`. You may need to change the actual qu
 Rename the folder: `config_template` --> `config` and fill all the necessary information (account number and AWS regions). Make sure your AWS CLI is configured correctly. Then, use sls command to deploy.
 
 ```bash
-sls deplly --stage test
+sls deploy --stage test
+sls deploy --stage dev
 ```
