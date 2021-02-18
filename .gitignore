@@ -7,4 +7,9 @@
 .env*
 npm-debug.log
 Thumbs.db
-/config
+
+# For local deploy command
+local-commands.md
+
+# Error log for yarn
+yarn-error.log

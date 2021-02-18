@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "lint": "./node_modules/.bin/eslint ./",
-    "lint-fixup": "./node_modules/.bin/eslint ./ --ext .js,.jsx --fix",
+    "prettier": "prettier --check src/**/*.ts",
+    "fix-prettier": "prettier --write src/**/*.ts src/**/**/*.ts __tests__/**/*.ts",
+    "lint": "./node_modules/.bin/eslint ./ --ext .ts",
+    "lint-fixup": "./node_modules/.bin/eslint ./ --ext .ts,.tsx --fix",
     "generate": "graphql-codegen --config codegen.yml",
     "deploy": "sls deploy --stage test",
     "dev": "sls offline start -r ap-southeast-1 --stage test"
@@ -20,6 +22,8 @@
   "devDependencies": {
     "@graphql-codegen/cli": "1.19.0",
     "@graphql-codegen/typescript": "1.17.11",
+    "@typescript-eslint/eslint-plugin": "^4.15.1",
+    "@typescript-eslint/parser": "^4.15.1",
     "eslint": "^7.12.1",
     "serverless-dotenv-plugin": "^3.0.0",
     "serverless-offline": "^6.5.0",
