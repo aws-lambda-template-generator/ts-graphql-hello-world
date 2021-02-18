@@ -9,7 +9,8 @@
     "lint-fixup": "./node_modules/.bin/eslint ./ --ext .ts,.tsx --fix",
     "generate": "graphql-codegen --config codegen.yml",
     "deploy": "sls deploy --stage test",
-    "dev": "sls offline start -r ap-southeast-1 --stage test"
+    "dev": "sls offline start -r ap-southeast-1 --stage test",
+    "dev-server": "nodemon --watch '**/*.ts' --ignore '**/*.spec.ts' --exec 'ts-node' ./local.ts"
   },
   "repository": "",
   "author": "Mdh",
@@ -24,12 +25,15 @@
     "@graphql-codegen/typescript": "1.17.11",
     "@typescript-eslint/eslint-plugin": "^4.15.1",
     "@typescript-eslint/parser": "^4.15.1",
+    "apollo-server": "^2.21.0",
     "eslint": "^7.12.1",
+    "nodemon": "^2.0.7",
     "serverless-dotenv-plugin": "^3.0.0",
     "serverless-offline": "^6.5.0",
     "serverless-plugin-git-variables": "^5.1.0",
     "serverless-webpack": "^5.3.3",
     "ts-loader": "^8.0.2",
+    "ts-node": "^9.1.1",
     "typescript": "^3.9.7",
     "webpack": "^4.44.1",
     "webpack-node-externals": "^2.5.0"

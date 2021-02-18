@@ -42,7 +42,4 @@ sls deploy --stage test
 
 # Account can be overriden by passing the --account in sls command
 sls deploy --stage test --acount <your AWS account number>
-
-# load the fixture data. table prefix is set to test_
-yarn load-fixtures-remote
 ```

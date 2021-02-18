@@ -12,4 +12,5 @@ Thumbs.db
 local-commands.md
 
 # Error log for yarn
-yarn-error.log
+yarn-debug.log*
+yarn-error.log*
