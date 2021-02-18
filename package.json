@@ -12,9 +12,13 @@
     "dev": "sls offline start -r ap-southeast-1 --stage test",
     "dev-server": "nodemon --watch '**/*.ts' --ignore '**/*.spec.ts' --exec 'ts-node' ./local.ts"
   },
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aws-lambda-template-generator/ts-graphql-hello-world"
+  },
   "author": "Mdh",
   "license": "MIT",
+  "homepage": "https://github.com/aws-lambda-template-generator",
   "dependencies": {
     "apollo-server-lambda": "^2.16.1",
     "graphql": "^15.3.0",
